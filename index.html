@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>VINXZ SCRIPT</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="favicon.png">
+
+  <!-- Fonte -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="app">
+
+    <h1>SCRIPT PRIVADO DO VINXZ.4M</h1>
+    <h4 class="pulse">Testado e Aprovado!</h4>
+
+    <!-- ================= TELA DE JOGOS ================= -->
+    <div id="tela-jogos" class="games">
+
+      <div class="game-card">
+        <img src="aviator.png" alt="Aviator">
+        <span>Aviator</span>
+        <button onclick="entrarNoJogo('Aviator')">RECEBER SINAIS</button>
+      </div>
+
+      <div class="game-card">
+        <img src="ox.png" alt="Fortune Ox">
+        <span>Fortune Ox</span>
+        <button onclick="entrarNoJogo('Fortune Ox')">RECEBER SINAIS</button>
+      </div>
+
+      <div class="game-card">
+        <img src="tiger.png" alt="Fortune Tiger">
+        <span>Fortune Tiger</span>
+        <button onclick="entrarNoJogo('Fortune Tiger')">RECEBER SINAIS</button>
+      </div>
+
+      <div class="game-card">
+        <img src="mouse.png" alt="Fortune Mouse">
+        <span>Fortune Mouse</span>
+        <button onclick="entrarNoJogo('Fortune Mouse')">RECEBER SINAIS</button>
+      </div>
+
+      <div class="game-card">
+        <img src="rabbit.png" alt="Fortune Rabbit">
+        <span>Fortune Rabbit</span>
+        <button onclick="entrarNoJogo('Fortune Rabbit')">RECEBER SINAIS</button>
+      </div>
+
+      <div class="game-card">
+        <img src="dragon.png" alt="Fortune Dragon">
+        <span>Fortune Dragon</span>
+        <button onclick="entrarNoJogo('Fortune Dragon')">RECEBER SINAIS</button>
+      </div>
+
+    </div>
+    <!-- =============== FIM TELA JOGOS ================= -->
+
+    <!-- ================= TELA DE SINAIS ================= -->
+    <div id="tela-sinais" style="display:none;">
+
+      <p id="info">⚠️ Aguarde 1 minuto entre cada sinal</p>
+
+      <button id="btnSinal" onclick="gerarSinal()">GERAR SINAL</button>
+      <button onclick="voltar()">VOLTAR</button>
+
+      <div id="timer"></div>
+
+      <div id="signals"></div>
+
+<div class="ganhos-box">
+  <div class="ganhos-titulo">USUÁRIOS DO SINAL</div>
+  <table id="tabela-ganhos"></table>
+</div>
+
+
+    </div>
+    <!-- =============== FIM TELA SINAIS ================= -->
+
+    <!-- ================= OVERLAY DE ANÁLISE ================= -->
+    <div id="overlay-sinal">
+
+      <div class="loader">
+
+        <!-- TEXTO DINÂMICO -->
+        <span id="texto-analise">ANALISANDO PADRÕES</span>
+
+        <!-- FRASES DISPONÍVEIS (JS VAI ROTACIONAR) -->
+        <div id="frases-analise" style="display:none;">
+          <span>ANALISANDO PADRÕES</span>
+          <span>INJETANDO SCRIPT NO CÓDIGO FONTE</span>
+          <span>CRUZANDO DADOS EM TEMPO REAL</span>
+          <span>VALIDANDO ENTRADA SEGURA</span>
+          <span>SINAL SENDO CALIBRADO</span>
+        </div>
+
+        <!-- PROGRESSO -->
+        <div class="progress">
+          <div class="progress-bar" id="progressBar"></div>
+        </div>
+
+        <!-- CONTADOR -->
+        <small id="percentual">0%</small>
+
+      </div>
+    </div>
+    <!-- ================= FIM OVERLAY ================= -->
+
+    <!-- NOTIFICAÇÃO -->
+    <div id="notification"></div>
+
+  </div>
+<footer class="footer">
+  © 2027 VINXZ 4M. Todos os direitos reservados.
+</footer>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+
+</body>
+</html>
